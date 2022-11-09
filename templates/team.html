@@ -1,0 +1,51 @@
+
+{% extends 'layout.html' %}
+{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h1 class="brand-name text-center" style=" padding: 2px"> You can Puchase now: </h1>
+	<div class="card-group" style="margin-top: 100px;">
+   
+  <div class="card">
+    <img src="{{url_for('static', filename='images/j7.jpeg')}}" class="card-img-top" width="20%" height="40%" alt="..." style="border-radius: 20px">
+    <div class="card-body text-center">
+      <h5 class="card-title" style="color: gold">Golden Bracelets</h5>
+      <p class="card-text">230$</p>
+    
+      <a href="#" class="card-link">Purchase Now</a>
+ 
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{{url_for('static', filename='images/j5.jpeg')}}" class="card-img-top" width="30%" height="40%" alt="..." style="border-radius: 20px">
+    <div class="card-body text-center">
+      <h5 class="card-title" style="color: gold">Gorgeous Ring</h5>
+      <p class="card-text">180$</p>
+    
+      <a href="#" class="card-link">Purchase Now</a>
+ 
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card" >
+    <img src="{{url_for('static', filename='images/j6.webp')}}" class="card-img-top" width="30%" height="40%" alt="..." style="border-radius: 20px">
+    <div class="card-body text-center">
+      <h5 class="card-title" style="color: gold">Gold Chain Bracelets</h5>
+      <p class="card-text">200$</p>
+      <a href="#" class="card-link">Purchase Now</a>
+  
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+{% endblock %}
+

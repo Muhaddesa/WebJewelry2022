@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registratiom</title>
+    <link rel="stylesheet" href="design.css">
+   
+    
+</head>
+<body style="background-color: antiquewhite;">
+   <section class="vh-100" >
+       <div class="container h-100">
+           <div row d-flex justify-content-center align-items-center h-100>
+               <div class="col-lg-12 col-xl-11" >
+                   <div class="card text-black" style="border-radius: 30px; margin-top: 30px; margin-left: 70px; margin-bottom: -20px">
+                       <div class="card-body p-md-5" >
+                           <div class="row justify-content-center" >
+                               <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                                     <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign in</p>
+                                    
+             <form>
+                 <div class="form-group">
+                    <label for="exampleInputName">Name</label>
+                    <input type="text" class="form-control" id="exampleInputName">
+                 </div>
+                 <div class="form-group">
+                    <label for="exampleInputLName">Last Name</label>
+                    <input type="text" class="form-control" id="exampleInputLName">
+                    </div>
+                 <div class="form-group">
+                    <label for="exampleInputPassword">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword">
+                 </div>
+                 <div class="form-group d-flex justify-content-center  ">
+                   <a class="nav-link" href="/home">
+                    <button type="button" class="btn btn-primary "  value="Submit"> Sign in </button>
+                     </a> 
+     
+                 </div>      
+                </form>
+                </div>
+                <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2 float-right">
+                    <img  class="img-fluid" alt="Sample image" src="{{url_for('static', filename='images/SignUp.png')}}" height="80%" width="80%">
+                        
+                                </div>  
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </section>
+                 
+</body>
+</html>
+{% endblock %}
